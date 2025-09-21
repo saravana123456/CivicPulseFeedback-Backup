@@ -1,0 +1,148 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background:/* #fff*/ transparent;
+  border-bottom: 0px solid #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);*/
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  flex-wrap: wrap; 
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+.login-btn {
+  padding: 8px 16px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: #333;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px 60px; /* account for fixed navbar */
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem); /* auto resize text */
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  color: #555;
+  margin-bottom: 35px;
+}
+
+.register-btn {
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.register-btn:hover {
+  background: #333;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px 60px;
+  display: flex;
+  justify-content: center; /* center the box */
+}
+
+/* White Rectangle Box */
+.hero-box {
+  background: #ffffff;
+  border-radius: 16px;           /* rounded corners */
+  padding: 40px 30px;
+  max-width: 1200px;              /* keeps it neat on large screens */
+  width: 100%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); /* soft drop shadow */
+}
+
+.hero-box h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-box p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  color: #555;
+  margin-bottom: 35px;
+}
+
+/* Home.css or Navbar.css */
+
+.nav-link-text {
+  cursor: pointer;       /* shows pointer on hover */
+  color: black;          /* normal text color */
+  text-decoration: none; /* remove underline */
+  font-weight: 500;      /* optional: make it slightly bold */
+}
+
+.nav-link-text:hover {
+  color: #007bff;        /* optional: highlight on hover */
+}
